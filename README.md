@@ -1,9 +1,8 @@
 # metabase-setup-script
 This script does the following:
 1. Creates a `metabase` folder in your home directory.
-2. Downloads the
-3. Runs the Metabase server on port 3000. See below to change the port.
-4. Sets up an nginx virtual server. See below for options.
+2. Downloads version 0.25.1 of Metabase.
+3. Runs the metabase setup.
 
 # Prerequisites
 1. Java 1.7 or greater must be installed. This should already be the case with instances.
@@ -18,7 +17,7 @@ wget -O setup-metabase.sh https://raw.githubusercontent.com/tambykojak/metabase-
 
 2. Make the script executable.
 ```
-chmod u+x setup-metabase.sh
+chmod +x setup-metabase.sh
 ```
 3. (Optional) Set the port you want Metabase to run on. If you skip this step, Metabase will run on port 3000.
 ```
@@ -28,3 +27,6 @@ MB_JETTY_PORT=3000
 ```
 ./setup-metabase.sh
 ```
+
+# Notes
+* Using this script to get Metabase running will force Metabase to use a local database. For my case, that was fine, but if you are looking to use this for more than a personal project I would recommend following (Metabase's setup documentation)[http://www.metabase.com/docs/latest/operations-guide/start.html#installing-and-running-metabase].
