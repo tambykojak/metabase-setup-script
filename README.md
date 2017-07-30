@@ -11,5 +11,20 @@ This script does the following:
 
 # Setup
 1. Download the `setup-metabase.sh` script found in this repository.
-2. Metabase runs on port 3000 by default. If you would like to change this, set the `MB_JETTY_PORT` environment variable now.
-3. Run the `setup-metabase.sh` script that you downloaded!
+
+```
+wget -O setup-metabase.sh https://raw.githubusercontent.com/tambykojak/metabase-setup-script/master/setup-metabase.sh
+```
+
+2. Make the script executable.
+```
+chmod u+x setup-metabase.sh
+```
+3. (Optional) Set the port you want Metabase to run on. If you skip this step, Metabase will run on port 3000.
+```
+MB_JETTY_PORT=3000
+```
+4. Run the script!
+```
+./setup-metabase.sh
+```
