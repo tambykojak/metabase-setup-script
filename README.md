@@ -6,7 +6,7 @@ This script does the following:
 4. Sets up an nginx virtual server that forwards traffic to the Metabase.
 
 # Prerequisites
-1. Java 1.7 or greater must be installed. This should already be the case with instances.
+1. Java 1.7 or greater must be installed. This should already be the case with Amazon Linux instances.
 2. Make sure Nginx is installed. Nginx may or may not be installed on your instance. Use `nginx -v` to check if you have it installed and `yum install nginx` to install it if you do not.
 
 # Setup
